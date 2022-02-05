@@ -1,0 +1,7 @@
+include ':app'
+rootProject.name = "photography"
+//include ':modelmain'
+include ':modelMain'
+include ':p_mine'
+include ':p_login'
+include ':p_message'
