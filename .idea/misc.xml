@@ -3,8 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.12708333333333333" />
+        <entry key="app/src/main/res/drawable/bg_white.xml" value="0.152" />
+        <entry key="app/src/main/res/drawable/bottom_textcolor_drawable_selector.xml" value="0.16" />
+        <entry key="app/src/main/res/drawable/rb_main_home.xml" value="0.1905" />
+        <entry key="app/src/main/res/drawable/rb_mian_communityfragment.xml" value="0.198" />
+        <entry key="app/src/main/res/drawable/rb_mian_mefragment.xml" value="0.198" />
+        <entry key="app/src/main/res/drawable/rb_mian_storefragment.xml" value="0.198" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/bottom_publish.xml" value="0.25" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1385" />
+        <entry key="p_community/src/main/res/layout/activity_community.xml" value="0.128125" />
+        <entry key="p_community/src/main/res/layout/fragment_community.xml" value="0.286231884057971" />
+        <entry key="p_community/src/main/res/layout/fragment_home.xml" value="0.286231884057971" />
+        <entry key="p_home/src/main/res/layout/activity_edit.xml" value="0.14322916666666666" />
+        <entry key="p_home/src/main/res/layout/activity_home.xml" value="0.28351449275362317" />
+        <entry key="p_home/src/main/res/layout/fragment_home.xml" value="0.26358695652173914" />
+        <entry key="p_home/src/main/res/layout/fragment_home1.xml" value="0.1421875" />
+        <entry key="p_login/src/main/res/drawable/ic_launcher_background.xml" value="0.1385" />
         <entry key="p_login/src/main/res/layout/activity_login.xml" value="0.28177083333333336" />
+        <entry key="p_message/src/main/res/layout/fragment_message.xml" value="0.28894927536231885" />
+        <entry key="p_mine/src/main/res/layout/fragment_mine.xml" value="0.286231884057971" />
       </map>
     </option>
   </component>

@@ -13,6 +13,16 @@ ext {
             testInstrumentationRunner: "androidx.test.runner.AndroidJUnitRunner"
     ]
 
+    def versions = [:]
+    versions.support = "28.0.0"
+    versions.fresco = "2.3.0"
+    versions.kotlin = kotlin_version
+    versions.coroutines = coroutines_version
+    versions.immersionbar = "3.0.0"
+    versions.okhttp3 = "4.9.0"
+    versions.retrofit2 = "2.7.0"
+    versions.navigation = "2.3.0"
+
     //版本号
     def APPCOMPAT_V7_VERSION = "28.0.0"
     def CONSTRAINT_LAYOUT_VERSION = "2.1.1"
@@ -24,10 +34,10 @@ ext {
             "kotlin"            :'androidx.core:core-ktx:1.7.0',
             "material"          :'com.google.android.material:material:1.5.0',
             "constraintlayout"  :'androidx.constraintlayout:constraintlayout:2.1.3',
-//            "livedata"          :'androidx.lifecycle:lifecycle-livedata:'+ JETPACK,
-//            "viewmodel"         :'androidx.lifecycle:lifecycle-viewmodel:'+ JETPACK,
-//            "legacyv4"          :'androidx.legacy:legacy-support-v4:1.0.0',
-//            "splashscreen"      :'androidx.core:core-splashscreen:1.0.0-alpha01'
+            "livedata"          :'androidx.lifecycle:lifecycle-livedata:'+ JETPACK_VERSION,
+            "viewmodel"         :'androidx.lifecycle:lifecycle-viewmodel:'+ JETPACK_VERSION,
+            "XPopup"            :'com.github.li-xiaojun:XPopup:2.3.8',  //弹窗
+
     ]
 
 }

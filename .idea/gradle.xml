@@ -12,6 +12,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/modelMain" />
+            <option value="$PROJECT_DIR$/p_community" />
+            <option value="$PROJECT_DIR$/p_home" />
             <option value="$PROJECT_DIR$/p_login" />
             <option value="$PROJECT_DIR$/p_message" />
             <option value="$PROJECT_DIR$/p_mine" />

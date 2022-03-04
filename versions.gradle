@@ -14,12 +14,6 @@ def support = [:]
 support.recyclerview        = "com.android.support:recyclerview-v7:$versions.support"
 support.appcompat           = "com.android.support:appcompat-v7:$versions.support"
 support.design              = "com.android.support:design:$versions.support"
-                            // need Gradle Plugin v1.5.0 or above
-support.vectordrawable      = "com.android.support:support-vector-drawable:$versions.support"
-support.annotations         = "com.android.support:support-annotations:$versions.support"
-support.coreui              = "com.android.support:support-core-ui:$versions.support"
-support.coreutils           = "com.android.support:support-core-utils:$versions.support"
-support.v4                  = "com.android.support:support-v4:$versions.support"
 deps.support = support
 
 def androidx = [:]
@@ -73,14 +67,6 @@ deps.squareup = squareup
 
 
 
-def others = [:]
-others.dokitNoOp           = "com.didichuxing.doraemonkit:doraemonkit-no-op:3.1.4"
-others.dokit               = "com.didichuxing.doraemonkit:doraemonkit:3.1.4"
-others.autosize            = "com.github.JessYanCoding:AndroidAutoSize:v1.2.1"
-others.compress            = "com.iceteck.silicompressorr:silicompressor:2.2.4"
-others.rxjava              = "io.reactivex:rxjava:1.2.1"
-others.rxandroid           = "io.reactivex:rxandroid:1.2.1"
-deps.others = others
 
 def google = [:]
 google.material = "com.google.android.material:material:1.5.0"
@@ -119,6 +105,8 @@ def third=[
         'com.github.li-xiaojun:XPopup:2.7.5',  //弹窗
         'com.ogaclejapan.smarttablayout:library:2.0.0@aar',//viewpager_tab库
         'com.ogaclejapan.smarttablayout:utils-v4:2.0.0@aar',//viewpager_tab库
-        'com.github.gzu-liyujiang.AndroidPicker:AddressPicker:4.1.7'//地址选择器
+        'com.github.gzu-liyujiang.AndroidPicker:AddressPicker:4.1.7',//地址选择器
+        'com.alibaba:arouter-api:1.5.2'//router
+
 ]
 deps.third=third

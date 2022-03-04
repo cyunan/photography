@@ -1,0 +1,80 @@
+plugins {
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+if (isDebug.toBoolean()) {
+    apply plugin: 'com.android.application'
+}else {
+    apply plugin: 'com.android.library'
+}
+android {
+    compileSdkVersion CompileSdkVersion.toInteger()
+    buildToolsVersion BuildToolsVersion.toString()
+
+    defaultConfig {
+        if(isDebug.toBoolean()){
+            applicationId "com.example.p_home"
+        }
+        minSdkVersion MinSdkVersion.toInteger()
+        targetSdkVersion TargetSdkVersion.toInteger()
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME", project.getName())
+            }
+        }
+
+        sourceSets {
+            main {
+                java {
+//                isBuildModule是是否整体打包的开关，定义在gradle.properties中
+                    if (isDebug.toBoolean()) {
+//                    独立运行时的AndroidManifest文件位置
+                        manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+                    } else {
+//                    整体打包AndroidManifest位置
+                        manifest.srcFile 'src/main/AndroidManifest.xml'
+//                    排除独立运行时作为载体的Activity
+                        exclude 'com/du/itest/debug'
+                    }
+                }
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    viewBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation project(':modelMain')
+
+
+    implementation 'com.alibaba:arouter-api:1.5.2'
+    kapt 'com.alibaba:arouter-compiler:1.5.2'
+
+
+}
