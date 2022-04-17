@@ -36,16 +36,22 @@ abstract class BaseFragment<T : ViewBinding> : Fragment() {
             onLazyLoad()
             isInitializedData = true
         }
+
+        if (!isHidden) {
+            onVisible()
+        }
     }
+
+
+
 
     override fun onDestroy() {
         isInitializedData = false
         super.onDestroy()
     }
 
-    open fun onLazyLoad() {
-
-    }
+    open fun onVisible() {}
+    open fun onLazyLoad() {}
 
 
 }

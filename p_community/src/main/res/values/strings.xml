@@ -1,4 +1,8 @@
 <resources>
+
     <string name="app_name">p_community</string>
-    <string name="community">社区</string>
+    <!-- 社区板块所有命名要加前缀 "com_" -->
+    <string name="com_community">社区</string>
+    <string name="com_appoint">约拍</string>
+
 </resources>

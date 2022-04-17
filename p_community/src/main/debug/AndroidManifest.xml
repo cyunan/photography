@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Photography">
         <activity
-            android:name=".CommunityActivity"
+            android:name=".ui.CommunityActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
